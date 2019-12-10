@@ -20,6 +20,7 @@ Here are the balls in play that we investigated, grouped by "launch angle" and "
 We correctly predicted the hit-type for **83%** of the balls put into play.
 Here is the resulting confusion matrix:
 ![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/confusion_matrix.png)
+
 It is clear from the matrix that the model did well with some types of hits and not others.
 Here is a graphical representation of our test home runs, with incorrect predictions in yellow:
 ![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/true_home_runs.gif)
