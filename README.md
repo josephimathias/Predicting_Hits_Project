@@ -1,60 +1,32 @@
-# Random Forest and KNN with Baseball data set
+![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/title.png)
+# Baseball - Categorizing Hits in MLB
+Joey Mathias and Daniel Torres
 
-## Project Members:
+This project involves conducting various categorical analyses to predict hit type given over 50 potential features. Please see the slides that accompany this project [here](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/slides.pdf).
 
-**Data Scientists** - Joey Mathias & Daniel Torres
+### Goal
+Our goal was to determine whether a ball put into play would result in a single, double, triple, home run, sacrifice bunt, or sacrifice fly. Our potential features included what type of pitch was thrown, the angle at which the ball was hit, and many others.
 
-**Flatiron School** - Data Science Fellowship Module 5 Project
+Here are the balls in play that we investigated, grouped by "launch angle" and "launch speed":
+![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/original_clusters.gif)
 
-## Project Goals:
+### Process
+* We selected 36 of 89 features for experimentation
+* We balanced data using SMOTE
+* We train/test split our data and ran: decision trees, random forest, KNN, Gradient Boost, XGBoost
+* We visualized our errors
 
-The following project conducts an exploration and analysis of Baseball dataset for 2019 season, focus on singles, doubles, home runs, sac fly, triple, sac bunt. The dataset was colected from XXX website. The scope of the project is to observe the accuracy of our models using Random Forest, KNN, Gradient Boost, XG Boost.
- 
+### Results
+We correctly predicted the hit-type for **83%** of the balls put into play.
+Here is the resulting confusion matrix:
+![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/confusion_matrix.png)
+It is clear from the matrix that the model did well with some types of hits and not others.
+Here is a graphical representation of our test home runs, with incorrect predictions in yellow:
+![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/true_home_runs.gif)
 
-Research questions:
-1) How strong or week is our prediction to have a single, for example, given a certian launch angle and launch speed. 
-2) Explore ways to improve our accuracy given imbalance in our data, by conducting SMOTE and Gridsearch.  
-
-Exploration:
-
-1. Random Forest
-
-2. KNN
-
-3. Gradient Boost
-
-4. XG Boost.
-
-
-## Repository Files:
-
-*To dive into our analysis, please observe the following content.*
-
-- **README.md:** repository overview document.
-
-- **data_cleaning.ipynb:** technical Jupyter Notebook that cleans data from Lending club dataset.
-
-- **technical_notebook.ipynb:** technical Jupyter Notebook with. 
-
-- ** :** folder containing data
-
-  - **LCDataDictionary.xlsx:** resulting xlsx from dataset from Kaggle
-
-  - **LoanStats3d_securev1.csv.zip:** resulting zip folder containing different datasets
-  
-  - **LoanStats3c_securev1.csv.zip:** resulting zip folder containing different datasets
-
-- **python_files:** folder containing Python files
-
-  - **data_cleaning.py:**
-
-  - **technical_notebook.py:**
-
-
-## Responsibilities:
-
-- Data Collection & Cleaning (Notebooks) - Joey Mathias, Daniel navigating
-
-- Data Exploration & Analysis (Notebook & Visualizations) - Joey Mathias and Daniel (both driving and navigating)
-
-- Baseball presentation (PDF) - Joey Mathias & Daniel Torres 
+### Files in Repository:
+* This README.md - Joey
+* Technical_Notebook.ipnby - This file contains our entire process including feature selection, modeling, and visualization - Joey and Daniel
+* slides.pdf - This file contains the project slides - Joey and Daniel
+* images - This folder contains images including illustrative gifs and this README's header - Joey
+* data - This folder contains the data that we analyzed, downloaded from Baseball Savant  - [BaseballSavant](https://baseballsavant.mlb.com)
