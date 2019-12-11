@@ -1,5 +1,5 @@
 ![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/title.png)
-# Baseball - Categorizing Hits in MLB
+# Predicting Hits - Categorizing Balls-in-Play in MLB
 ## Joey Mathias and Daniel Torres
 
 This project involves conducting various categorical analyses to predict hit type given over 50 potential features. Please see the slides that accompany this project [here](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/slides.pdf).
