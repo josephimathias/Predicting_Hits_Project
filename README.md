@@ -26,7 +26,7 @@ Here is a graphical representation of our test home runs, with incorrect predict
 ![alt text](https://github.com/josephimathias/Predicting_Hits_Project/blob/master/images/true_home_runs.gif)
 
 ### Files in Repository:
-* This README.md - Joey
+* README.md - Joey
 * Technical_Notebook.ipnby - This file contains our entire process including feature selection, modeling, and visualization - Joey and Daniel
 * slides.pdf - This file contains the project slides - Joey and Daniel
 * images - This folder contains images including illustrative gifs and this README's header - Joey
